@@ -1,2 +1,138 @@
-font-family: 'Montserrat', sans-serif;
-font-family: 'Raleway', sans-serif;
+.container {
+    width: 1920px;
+    margin: 0 auto;
+}
+
+
+/* Служебный класс для первоночального расположения объектов на странице */
+
+.service-class {
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
+
+/* Класс с шрифтом для добавления в необходимые объекты */
+
+.font-family-Montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Класс с шрифтом для добавления в необходимые объекты */
+
+.font-family-Raleway {
+    font-family: 'Raleway', sans-serif;
+}
+
+.header-item {
+    min-height: 1920px;
+    min-height: 1024px;
+    padding: 40px 0 0 0;
+    border: 1px solid green;
+    box-sizing: border-box;
+    background-image: url(../img/1_backheader.png);
+}
+
+.header-logo {
+    margin: 0 0 0 376px;
+    display: flex;
+    float: left;
+    justify-content: space-between;
+    align-items: center;
+    width: 180px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-logo-svg {
+    fill: #fff;
+}
+
+.header-logo-txt {
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: -0.04em;
+    color: #ffffff;
+}
+
+.header-logo:hover .header-logo-svg {
+    fill: #fa73ab;
+}
+
+.header-logo:hover .header-logo-txt {
+    color: #fa73ab;
+}
+
+.header-logo:active .header-logo-svg {
+    fill: #faec73;
+}
+
+.header-logo:active .header-logo-txt {
+    color: #faec73;
+}
+
+.navigation-a {
+    float: left;
+    width: 637px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    box-sizing: border-box;
+    margin: 22px 0 0 219px;
+}
+
+.navigation-link {
+    display: flex;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #ffffff;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+
+.navigation-link:hover {
+    color: #c7b299;
+}
+
+.navigation-link:active {
+    color: #ffffff;
+}
+
+.navigation-div {
+    display: flex;
+    float: left;
+    margin: 15px 0 0 63px;
+    width: 70px;
+    height: 24px;
+    justify-content: space-between;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.navigation-button {
+    margin: 0;
+    padding: 0;
+    height: 24px;
+    box-sizing: border-box;
+}
+
+.navigation-button-svg {}
+
+.search-icon-form {
+    width: 24px;
+    height: 24px;
+    position: relative;
+}
+
+.header-main {}
