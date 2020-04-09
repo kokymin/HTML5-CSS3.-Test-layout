@@ -1,0 +1,187 @@
+    // out:  ../css/style.css
+    @width: 1920px;
+    @ff-Montserrat: 'Montserrat',
+    'Arial',
+    sans-serif;
+    @ffRaleway: 'Raleway',
+    'Arial',
+    sans-serif;
+    @box-sizing: border-box;
+    .container {
+        width: @width;
+        margin: 0 auto;
+        border: 1px solid black;
+        background-color: aquamarine
+    }
+    
+    .service-class () {
+        border: 1px solid red;
+    }
+    
+    .header-item {
+        .service-class ();
+        min-height: @width;
+        min-height: 1024px;
+        padding: 40px 0 0 0;
+        box-sizing: @box-sizing;
+        background-image: url(../img/1_backheader.png);
+    }
+    
+    .header-logo {
+        .service-class ();
+        box-sizing: @box-sizing;
+        margin: 0 0 0 376px;
+        display: flex;
+        float: left;
+        justify-content: space-between;
+        align-items: center;
+        width: 180px;
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .header-logo-svg {
+        fill: #fff;
+        &:hover {
+            fill: #fa73ab;
+        }
+        &:active {
+            fill: #faec73;
+        }
+    }
+    
+    .header-logo-txt {
+        font-size: 34px;
+        line-height: 1.2;
+        font-weight: 400;
+        letter-spacing: -0.04em;
+        color: #ffffff;
+        &:hover {
+            color: #fa73ab;
+        }
+        &:active {
+            color: #faec73;
+        }
+    }
+    
+    .navigation-a {
+        .service-class ();
+        float: left;
+        width: 637px;
+        height: 11px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+        box-sizing: @box-sizing;
+        margin: 22px 0 0 219px;
+    }
+    
+    .navigation-link {
+        //    .service-class ();
+        font-family: @ff-Montserrat;
+        display: flex;
+        font-size: 14px;
+        line-height: 11px;
+        font-weight: 300;
+        color: #ffffff;
+        text-decoration: none;
+        box-sizing: border-box;
+        &:hover {
+            color: #c7b299;
+        }
+        &:active {
+            color: #ffffff;
+        }
+    }
+    
+    .navigation-div {
+        .service-class ();
+        display: flex;
+        float: left;
+        margin: 15px 0 0 63px;
+        width: 70px;
+        height: 24px;
+        justify-content: space-between;
+        overflow: hidden;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    .navigation-button {
+        display: flex;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        height: 24px;
+        width: 18px;
+        box-sizing: border-box;
+    }
+    
+    .header-main {
+        //      .service-class ();
+    }
+    
+    .header-main-a {
+        width: 54.15px;
+        height: 54.15px;
+        display: block;
+        float: left;
+        border-top: 2px solid #ffffff;
+        border-right: 2px solid #ffffff;
+        opacity: 0.5;
+        &:hover {
+            border-top: 2px solid yellow;
+            border-right: 2px solid yellow;
+        }
+    }
+    
+    .left {
+        transform: rotate(-135deg);
+        margin: 130.5px 0 0 150px;
+    }
+    
+    .rigt {
+        transform: rotate(45deg);
+        float: right;
+        margin: -130.50px 150px 0 0;
+    }
+    
+    .header-main-div {
+        .service-class ();
+        width: 589px;
+        min-height: 261px;
+        margin: 341px 0 0 666px;
+    }
+    
+    .header-main-span {
+        display: block;
+        text-align: center;
+        font-family: @ffRaleway;
+        line-height: 1.2;
+        color: #ffffff;
+    }
+    
+    .span-h2 {
+        font-size: 36px;
+        font-weight: 500;
+    }
+    
+    .span-h1 {
+        font-size: 52px;
+        font-weight: 800;
+    }
+    
+    .header-main-p {
+        font-family: @ff-Montserrat;
+        text-align: center;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 300;
+        color: #ffffff;
+    }
