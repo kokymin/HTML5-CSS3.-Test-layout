@@ -152,7 +152,7 @@
   justify-content: flex-start;
   float: left;
   width: 199px;
-  height: 45px;
+  min-height: 45px;
   margin: 15px 0 0 63px;
   overflow: hidden;
   box-sizing: border-box;
@@ -163,7 +163,7 @@
   padding: 0;
   box-sizing: border-box;
   width: 18px;
-  height: 24px;
+  max-height: 24px;
   background-color: #ffffff;
   background: none;
   border: none;
@@ -174,7 +174,7 @@
 }
 .search-icon-form {
   width: 24px;
-  height: 24px;
+  max-height: 24px;
   margin: 0 0 0 28px;
   position: relative;
 }
@@ -202,8 +202,8 @@
 }
 .search-icon-form__input:focus {
   /*   display: block; */
-  width: 150px;
-  height: 20px;
+  max-width: 150px;
+  max-height: 20px;
   transition: width 1s ease;
   border-bottom: 2px solid #fff;
 }
@@ -223,8 +223,8 @@
 /* Переключатели */
 .header-main-a {
   display: flex;
-  width: 54.15px;
-  height: 54.15px;
+  min-width: 54.15px;
+  min-height: 54.15px;
   display: block;
   float: left;
   border-top: 3px solid #ffffff;
@@ -256,6 +256,7 @@
   align-items: center;
   width: 589px;
   min-height: 261px;
+  margin: 0 475px 0 475px;
 }
 .header-main-span {
   display: flex;
@@ -289,8 +290,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
-  height: 53px;
+  min-width: 170px;
+  min-height: 53px;
   background-color: #998675;
   border-radius: 3px;
   text-decoration: none;
@@ -312,31 +313,34 @@
   color: #ffffff;
 }
 /* Пагинация */
-.header-main-pagination {
-  /*        .service-class (); */
+.header-section {
   box-sizing: border-box;
-  height: 11px;
   display: flex;
-  justify-content: center;
+  /* justify-content: space-between; */
   align-items: center;
+  flex-direction: column;
   clear: both;
 }
-.header-main-pa:hover .header-main-pagination-svg {
-  stroke: #d3c1ad;
-  stroke-width: 2;
-  fill: none;
-  transition: 1s;
-}
-.header-main-pa:active .header-main-pagination-svg {
-  fill: #ffffff;
-  stroke-width: 1;
-  opacity: 0.5;
-}
-.header-main-pagination-svg {
+.pagination {
+  width: 138px;
   display: flex;
-  fill: #ffffff;
-  stroke-width: 1;
-  opacity: 0.5;
+  justify-content: space-between;
+  clear: both;
+  box-sizing: border-box;
+}
+.pagination-item {
+  display: block;
+  width: 11px;
+  height: 11px;
+  background-color: #ccc;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  margin: 0 4.5px 0 4.5px;
+}
+.pagination-item:hover {
+  background-color: transparent;
+  border: 2px solid #d3c1ad;
+  transform: scale(1.2);
 }
 /* Секция с инструментами */
 .instruments-section {
@@ -351,8 +355,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 270px;
-  height: 213px;
+  max-width: 270px;
+  min-height: 213px;
   margin: 0 17px 0 17px;
   padding: 0;
   box-sizing: border-box;
@@ -360,8 +364,8 @@
 }
 .instruments:after {
   content: "";
-  width: 70px;
-  height: 3px;
+  min-width: 70px;
+  min-height: 3px;
   background-color: #f1eee9;
   display: block;
   position: absolute;
@@ -389,13 +393,13 @@
   line-height: 1.2;
   font-weight: 600;
   color: #555555;
-  width: 100%;
+  min-width: 100%;
   margin: 0 auto  19px auto ;
   padding: 0;
   text-align: center;
 }
 .instruments-p {
-  width: 100%;
+  min-width: 100%;
   text-align: center;
   font-family: montserrat;
   font-size: 13px;
@@ -437,8 +441,8 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  width: 1230px;
-  height: 482px;
+  min-width: 1230px;
+  min-height: 482px;
   position: relative;
 }
 .photo-landscape:first-child {
@@ -463,9 +467,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /*         flex-direction: column; */
   padding: 0 374px 0 376px;
-  height: 150px;
+  min-height: 150px;
   background-color: #f4f5f8;
   background-image: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
 }
@@ -500,8 +503,8 @@
 }
 .rate-button {
   /*             .service-class (); */
-  width: 170px;
-  height: 50px;
+  min-width: 170px;
+  min-height: 50px;
   background-color: #998675;
   border-radius: 3px;
   border: none;
@@ -520,71 +523,6 @@
 .rate-button:active {
   background-color: #998675;
 }
-/* Секция с примерами проектов */
-.projects-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.projects-span {
-  margin: 81px 0 24px 0;
-  font-family: raleway;
-  font-size: 30px;
-  line-height: 1.2;
-  font-weight: 600;
-  color: #555555;
-}
-.projects-p {
-  margin: 0 0 40px 0;
-  width: 757px;
-  font-family: montserrat;
-  font-size: 16px;
-  line-height: 28px;
-  font-weight: 300;
-  color: #8c8c8c;
-}
-/* Блок навигации с проектами */
-.projects-navigation {
-  display: flex;
-  width: 605px;
-  justify-content: space-between;
-  margin: 0 0 40px 0;
-}
-.projects-navigation-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 120px;
-  height: 32px;
-  font-family: montserrat;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 300;
-  text-decoration: none;
-  color: #8c8c8c;
-  text-transform: capitalize;
-  border: 1px solid #ebebeb;
-  border-radius: 3px;
-}
-.projects-navigation-link:hover {
-  color: #ffffff;
-  background-color: #998675;
-}
-.projects-navigation-link:active {
-  color: #8c8c8c;
-  background-color: #ffffff;
-  border: 1px solid #ebebeb;
-}
-.filter-active {
-  width: 70px;
-  height: 32px;
-  background-color: #998675;
-  border-radius: 3px;
-  color: #fff;
-  border: none;
-  box-sizing: border-box;
-}
 .projects {
   padding: 80px 375px 80px 375px;
   display: flex;
@@ -594,7 +532,7 @@
 }
 .projects-span {
   margin: 0 0 24px 0;
-  width: 100%;
+  min-width: 100%;
   display: block;
   font-family: raleway;
   font-size: 30px;
@@ -618,12 +556,12 @@
 .projects-button-group {
   display: flex;
   justify-content: center;
-  width: 100%;
+  min-width: 100%;
   margin: 0 0 50px 0;
 }
 .projects-button {
   margin: 0 10px 0 0;
-  width: 120px;
+  min-width: 120px;
   height: 32px;
   border: 1px solid #ebebeb;
   border-radius: 3px;
@@ -646,8 +584,8 @@
   color: #8c8c8c;
 }
 .filter-active {
-  width: 70px;
-  height: 32px;
+  min-width: 70px;
+  min-height: 32px;
   background-color: #998675;
   border-radius: 3px;
   color: #fff;
@@ -680,14 +618,14 @@
   position: absolute;
   box-sizing: border-box;
   top: -100%;
-  width: 100%;
-  height: 237px;
+  min-width: 100%;
+  min-height: 237px;
   padding: 106px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   overflow: hidden;
-  opacity: 0.7;
+  opacity: 0.8;
   background-color: #111;
   z-index: 1;
 }
@@ -712,7 +650,8 @@
   border-bottom: 10px solid #fbfaf8;
 }
 .card:hover .card-body:before {
-  border-bottom: 10px solid #736357;
+  border-bottom: 10px solid #362f2d;
+  opacity: 0.8;
 }
 .card-title {
   display: block;
@@ -791,21 +730,67 @@
 }
 .video {
   width: 1920px;
-  padding: 210px 683px 207px 685px;
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
 }
+.video-div {
+  padding: 210px 683px 207px 685px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  position: absolute;
+}
+.video-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  box-sizing: border-box;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: #ffffff;
+  background: none;
+  border: none;
+  outline: none;
+  margin: 0 0 44px 0;
+}
+.video-button:hover {
+  transform: scale(1.2);
+}
+.video-button:active {
+  transform: scale(1);
+}
+.video-button-span {
+  position: absolute;
+  min-height: 100px;
+  min-width: 100px;
+  opacity: 0.2;
+  background-color: #000000;
+  border-radius: 50%;
+  z-index: 1;
+}
+.video-button-svg {
+  position: absolute;
+  z-index: 2;
+  fill: white;
+}
+.video-button-svg:active {
+  fill: #c7b299;
+}
 .video-span-heading {
-  clear: both;
   display: block;
   font-family: raleway;
   font-size: 30px;
   line-height: 1.2;
   font-weight: 500;
   color: #ffffff;
+  max-width: 100%;
   text-align: center;
-  margin-bottom: 210px 0 0 0;
+  margin: 0 0 29px 0;
 }
 .video-p {
   font-family: montserrat;
@@ -813,8 +798,9 @@
   line-height: 28px;
   font-weight: 300;
   color: #ffffff;
-  max-width: 552px;
+  max-width: 100%;
   text-align: center;
+  margin: 0 0 40px 0;
 }
 .video-time {
   display: block;
@@ -830,8 +816,4 @@
   position: absolute;
   left: 0px;
   top: 0px;
-}
-.video-div {
-  z-index: 2;
-  position: absolute;
 }
