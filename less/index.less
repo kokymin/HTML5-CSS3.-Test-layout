@@ -1152,9 +1152,11 @@
 	position: relative;
 	&:hover {
 		opacity: 0.5;
+		transform: scale(1.2);
 	}
 	&:active {
 		opacity: 1;
+		transform: scale(1);
 	}
 }
 
@@ -1429,8 +1431,12 @@
 	background-color: transparent;
 }
 
-.labels-svg {}
-
+.labels-svg {
+	transition: transform 0.5s ease-out;
+	&:hover {
+		transform: rotate(360deg);
+	}
+}
 .widget-footer {
 	/* 	.service-class (); */
 	min-height: 347px;

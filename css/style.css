@@ -874,9 +874,11 @@
 }
 .figures-div:hover {
   opacity: 0.5;
+  transform: scale(1.2);
 }
 .figures-div:active {
   opacity: 1;
+  transform: scale(1);
 }
 .figures-div:after {
   content: "";
@@ -1115,6 +1117,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-color: transparent;
+}
+.labels-svg {
+  transition: transform 0.5s ease-out;
+}
+.labels-svg:hover {
+  transform: rotate(360deg);
 }
 .widget-footer {
   /* 	.service-class (); */
