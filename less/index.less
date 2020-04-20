@@ -19,9 +19,9 @@
 }
 @font-face {
     font-family: 'montserrat';
-    src: url('../fonts/montserrat/mmontserrat-regular.eot');
-    src: url('../fonts/montserrat/mmontserrat-regular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/montserrat/mmontserrat-regular.woff2') format('woff2'),
+    src: url('../fonts/montserrat/montserrat-regular.eot');
+    src: url('../fonts/montserrat/montserrat-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat/montserrat-regular.woff2') format('woff2'),
          url('../fonts/montserrat/montserrat-regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
@@ -92,7 +92,6 @@
 }
 
 @width: 1920px;
-
 body {
 	margin: 0;
 }
@@ -128,7 +127,11 @@ body {
 	.box-sizing();
 	background-image: url(../img/1_backheader.png);
 }
-
+.hyphens  (){	
+	-webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+}
 /* Стилизация логотипа */
 
 .header-logo {
@@ -355,6 +358,7 @@ body {
 
 .header-main-div {
 	/*         .service-class (); */
+	.raleway-font();
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -367,7 +371,6 @@ body {
 .header-main-span {
 	display: flex;
 	text-align: center;
-	.raleway-font();
 	color: #ffffff;
 }
 
@@ -386,9 +389,10 @@ body {
 }
 
 .header-main-p {
+	.hyphens ();
+	.montserrat-font();
 	display: flex;
 	margin: 0 0 52px 0;
-	.montserrat-font();
 	text-align: center;
 	font-size: 16px;
 	line-height: 24px;
@@ -415,7 +419,6 @@ body {
 }
 
 .header-main-button-text {
-	.raleway-font();
 	display: flex;
 	font-style: normal;
 	font-size: 14px;
@@ -431,7 +434,6 @@ body {
 .header-section {
 	box-sizing: border-box;
 	display: flex;
-	/* justify-content: space-between; */
 	align-items: center;
 	flex-direction: column;
 	clear: both;
@@ -571,6 +573,7 @@ body {
 }
 
 .demonstration-p {
+	.hyphens ();
 	display: block;
 	width: 757px;
 	text-align: center;
@@ -715,6 +718,7 @@ body {
 }
 
 .projects-span-p {
+	.hyphens ();
 	display: block;
 	max-width: 757px;
 	margin: 0 0 40px 0;
@@ -1008,6 +1012,7 @@ body {
 }
 
 .video-p {
+	.hyphens ();
 	.montserrat-font();
 	font-size: 16px;
 	line-height: 28px;
@@ -1053,13 +1058,14 @@ body {
 .mobile-div {
 	/* 	.service-class (); */
 	.box-sizing();
+	.montserrat-font();
 	max-width: 659px;
 	min-height: 317px;
 }
 
 .mobile-span {
 	display: block;
-.raleway-font();
+	.raleway-font();
 	font-size: 30px;
 	line-height: 1.2;
 	font-weight: 600;
@@ -1069,7 +1075,6 @@ body {
 
 .mobile-p {
 	max-width: 100%;
-	.montserrat-font();
 	font-size: 16px;
 	line-height: 28px;
 	font-weight: 300;
@@ -1085,7 +1090,6 @@ body {
 .mobile-summary {
 	/* 	.service-class (); */
 	.box-sizing();
-	.montserrat-font();
 	font-size: 16px;
 	font-weight: 300;
 	color: #8c8c8c;
@@ -1124,6 +1128,7 @@ body {
 
 .figures-div {
 	/* 	.service-class (); */
+	.montserrat-font();
 	max-width: 132px;
 	min-height: 171px;
 	display: flex;
@@ -1164,7 +1169,6 @@ body {
 
 .figures-span {
 	display: flex;
-	.montserrat-font();
 	font-size: 48px;
 	line-height: 36px;
 	font-weight: 200;
@@ -1173,7 +1177,6 @@ body {
 }
 
 .figures-p {
-	.montserrat-font();
 	font-size: 13px;
 	line-height: 20px;
 	font-weight: 300;
@@ -1230,6 +1233,7 @@ body {
 
 .posts-article {
 	/* 	.service-class (); */
+	.montserrat-font();
 	max-width: 370px;
 	max-height: 395px;
 	position: relative;
@@ -1294,7 +1298,7 @@ body {
 
 .posts-p-article {
 	/* 	.service-class (); */
-	.montserrat-font();
+/* 	.montserrat-font(); */
 	font-size: 14px;
 	line-height: 22px;
 	font-weight: 300;
@@ -1308,7 +1312,7 @@ body {
 .posts-a-article {
 	/* 	.service-class (); */
 	text-decoration: none;
-	.montserrat-font();
+/* 	.montserrat-font(); */
 	font-size: 14px;
 	line-height: 20px;
 	font-weight: 300;
@@ -1374,7 +1378,7 @@ body {
 	width: 50px;
 	height: 35px;
 	background-color: #363636;
-	.montserrat-font();
+ 	.montserrat-font();
 	font-size: 24px;
 	line-height: 20px;
 	font-weight: 300;
@@ -1422,6 +1426,7 @@ body {
 }
 .widget-footer {
 	/* 	.service-class (); */
+	.montserrat-font();
 	min-height: 347px;
 	padding: 80px 374px 81px 367px;
 	display: flex;
@@ -1443,13 +1448,12 @@ body {
 }
 
 .article-span {
-	.montserrat-font();
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: 300;
 	color: #555555;
 	width: 100%;
-	margin: 0;
+	margin: 0 0 10px 0;
 	/* 	hyphens: auto;
 	    -moz-hyphens: auto;
 	    -webkit-hyphens: auto;
@@ -1457,7 +1461,6 @@ body {
 }
 
 .widget-footer-article-a-botton {
-	.montserrat-font();
 	font-size: 14px;
 	line-height: 20px;
 	font-weight: 400;
@@ -1533,14 +1536,9 @@ body {
 	margin: 0 0 21px 0;
 }
 
-.article-span {
-	/* 	display: block; */
-	margin: 0 0 10px 0;
-}
 
 .article-span-date {
 	display: block;
-	.montserrat-font();
 	font-size: 12px;
 	line-height: 20px;
 	font-weight: 300;
@@ -1569,7 +1567,6 @@ body {
 }
 
 .article-span-a {
-	.montserrat-font();
 	font-size: 14px;
 	line-height: 20px;
 	font-weight: 300;
@@ -1584,7 +1581,6 @@ body {
 }
 
 .article-span-a-link {
-	.montserrat-font();
 	font-size: 14px;
 	line-height: 20px;
 	font-weight: 300;
