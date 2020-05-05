@@ -77,7 +77,6 @@ body {
   font-size: 62.5%;
 }
 .conteiner {
-  overflow: hidden;
   width: 100%;
   margin: 0;
   min-height: 100%;
@@ -443,7 +442,6 @@ body {
   flex-direction: column;
   background-color: #fbfaf8;
 }
-/* Секция с примерами экранов сайта */
 .demonstration-span {
   font-family: 'raleway';
   font-style: normal;
@@ -933,6 +931,9 @@ body {
   color: #8c8c8c;
   margin: 0;
   min-width: 560px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .mobile-details {
   margin: 0 0 2% 24%;
@@ -1500,8 +1501,8 @@ body {
     width: 50px;
     height: 50px;
     position: absolute;
-    top: 3px;
-    right: 4px;
+    top: 10px;
+    right: 9px;
     cursor: pointer;
     /* z-index: 2; */
     opacity: 0;
@@ -1580,8 +1581,6 @@ body {
     margin: 0;
     padding: 1.5% 0 1.5% x 0;
     display: flex;
-    /* float: right; */
-    /* box-sizing: border-box; */
     font-weight: 500;
     font-size: 2em;
   }
